@@ -1,12 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NuevoComponente } from "./nuevo-componente/nuevo-componente";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
   templateUrl: './app.html',
   styleUrl: './app.css',
+  imports: [NuevoComponente],
 })
 export class App {
-  protected readonly saludo = signal('Hola Mundo desde Angular');
+  titulo = 'Componente Básico Angular';
+  descripcion = 'Este es un componente básico de Angular utilizando TypeScript.';
 }
