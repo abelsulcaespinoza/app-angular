@@ -1,0 +1,19 @@
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: green;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+
+}
+
+
+p {
+  color: blue;
+  font-size: 16px;
+
+}
